@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Technical Departement Circles</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .white-rectangle {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .circle:hover {
+            transform: scale(1.1);
+        }
+        .circle-content {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+        }
+        .info {
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 200px;
+            display: none;
+            z-index: 1;
+        }
+        .circle:hover .info {
+            display: block;
+        }
+        #cybersecurity { background-color: #ff6b6b; }
+        #malware { background-color: #4ecdc4; }
+        #aiml { background-color: #45b7d1; }
+        #datascience { background-color: #f7b731; }
+        #cloud { background-color: #5d62d4; }
+        #devops { background-color: #16a085; }
+        #linux { background-color: #e67e22; }
+        #windows { background-color: #3498db; }
+        #flutter { background-color: #9b59b6; }
+        #webdev { background-color: #e74c3c; }
+        #networks { background-color: #1abc9c; }
+        #netsecurity { background-color: #f39c12; }
+        #pentest { background-color: #2ecc71; }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="white-rectangle">
+            <div class="logo-container">
+                <img src="background.png" alt="Technical Team Logo" class="logo">
+            </div>
+            <div class="container">
+                <div class="circle" id="cybersecurity">
+                    <div class="circle-content">CyberSecurity</div>
+                    <div class="info">
+                        <h3>CyberSecurity</h3>
+                        <p>Protect systems, networks, and programs from digital attacks.</p>
+                    </div>
+                </div>
+                <div class="circle" id="malware">
+                    <div class="circle-content">Malware Analysis</div>
+                    <div class="info">
+                        <h3>Malware Analysis</h3>
+                        <p>Study and analyze malicious software to understand its behavior and impact.</p>
+                    </div>
+                </div>
+                <div class="circle" id="aiml">
+                    <div class="circle-content">AI/ML</div>
+                    <div class="info">
+                        <h3>AI/ML</h3>
+                        <p>Develop intelligent systems and algorithms for machine learning and artificial intelligence.</p>
+                    </div>
+                </div>
+                <div class="circle" id="datascience">
+                    <div class="circle-content">Data Science</div>
+                    <div class="info">
+                        <h3>Data Science</h3>
+                        <p>Extract insights and knowledge from structured and unstructured data.</p>
+                    </div>
+                </div>
+                <div class="circle" id="cloud">
+                    <div class="circle-content">Cloud</div>
+                    <div class="info">
+                        <h3>Cloud</h3>
+                        <p>Design, implement, and manage cloud-based systems and services.</p>
+                    </div>
+                </div>
+                <div class="circle" id="devops">
+                    <div class="circle-content">DevOps</div>
+                    <div class="info">
+                        <h3>DevOps</h3>
+                        <p>Combine software development and IT operations for faster, more reliable software delivery.</p>
+                    </div>
+                </div>
+                <div class="circle" id="linux">
+                    <div class="circle-content">Linux Administration</div>
+                    <div class="info">
+                        <h3>Linux Administration</h3>
+                        <p>Manage and maintain Linux-based systems and servers.</p>
+                    </div>
+                </div>
+                <div class="circle" id="windows">
+                    <div class="circle-content">Windows Administration</div>
+                    <div class="info">
+                        <h3>Windows Administration</h3>
+                        <p>Manage and maintain Windows-based systems and servers.</p>
+                    </div>
+                </div>
+                <div class="circle" id="flutter">
+                    <div class="circle-content">Flutter</div>
+                    <div class="info">
+                        <h3>Flutter</h3>
+                        <p>Develop cross-platform mobile applications using Google's Flutter framework.</p>
+                    </div>
+                </div>
+                <div class="circle" id="webdev">
+                    <div class="circle-content">Web Development</div>
+                    <div class="info">
+                        <h3>Web Development</h3>
+                        <p>Create and maintain websites and web applications.</p>
+                    </div>
+                </div>
+                <div class="circle" id="networks">
+                    <div class="circle-content">Computer Networks</div>
+                    <div class="info">
+                        <h3>Computer Networks</h3>
+                        <p>Design, implement, and manage computer networks and communication systems.</p>
+                    </div>
+                </div>
+                <div class="circle" id="netsecurity">
+                    <div class="circle-content">Network Security</div>
+                    <div class="info">
+                        <h3>Network Security</h3>
+                        <p>Protect network infrastructure and data from unauthorized access and cyber threats.</p>
+                    </div>
+                </div>
+                <div class="circle" id="pentest">
+                    <div class="circle-content">Penetration Testing</div>
+                    <div class="info">
+                        <h3>Penetration Testing</h3>
+                        <p>Simulate cyberattacks to identify and fix security vulnerabilities in systems and networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
