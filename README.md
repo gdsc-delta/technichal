@@ -1,8 +1,7 @@
-Certainly! I'll create a GitHub Pages description for both the technical and non-technical circles websites. This description can be used in your README.md file or as part of your GitHub Pages site to introduce and explain the projects.
 
 
 
-Here's a description you can use for your GitHub Pages:
+
 
 ```markdown
 # Interactive Department Circles
